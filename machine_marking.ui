@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_select">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>100</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择文件库</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>160</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>一键标注</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>531</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查看标注结果：</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>821</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;菜单</string>
+    </property>
+    <addaction name="actionmanual_marking"/>
+    <addaction name="actionmachine_marking"/>
+    <addaction name="action_analy"/>
+    <addaction name="actionpre_making"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>&amp;说明</string>
+    </property>
+    <addaction name="actionhelp"/>
+    <addaction name="actionabout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionmanual_marking">
+   <property name="text">
+    <string>welcome_window</string>
+   </property>
+  </action>
+  <action name="actionmachine_marking">
+   <property name="text">
+    <string>manual_marking</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>help</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="action_analy">
+   <property name="text">
+    <string>analy</string>
+   </property>
+  </action>
+  <action name="actionpre_making">
+   <property name="text">
+    <string>pre_making</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

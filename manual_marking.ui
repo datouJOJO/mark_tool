@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="hereIsVideo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>521</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(189, 189, 189);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isAnger">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>60</y>
+      <width>125</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Anger</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isDisgust">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>60</y>
+      <width>125</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Disgust</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isFear">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>90</y>
+      <width>125</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fear</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isHappy">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>90</y>
+      <width>125</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Happy</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isSurprise">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>120</y>
+      <width>125</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Surprise</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isSad">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>130</y>
+      <width>125</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sad</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isNeutral">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>160</y>
+      <width>125</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Neutral</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="isdelete">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>160</y>
+      <width>257</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="subVideo">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>400</y>
+      <width>257</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>提交</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="seeEveryFrame">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>440</y>
+      <width>259</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>帧浏览</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectVideo">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>20</y>
+      <width>259</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择视频库</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="videoSlider">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>500</y>
+      <width>342</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="frameNumber">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>520</y>
+      <width>91</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="currentFrame">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>490</y>
+      <width>61</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前帧</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sliderLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>490</y>
+      <width>51</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>进度条</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pauseVideoB">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>520</y>
+      <width>124</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>暂停</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextVideoB">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>520</y>
+      <width>61</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>下一条</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playVideoB">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>520</y>
+      <width>61</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>播放</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="preVideoB">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>520</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>上一条</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>820</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;菜单</string>
+    </property>
+    <addaction name="backToWelcome"/>
+    <addaction name="backToMachine"/>
+    <addaction name="backToAnalysis"/>
+    <addaction name="backToPre"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>&amp;说明</string>
+    </property>
+    <addaction name="actionhelp"/>
+    <addaction name="actionabout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="backToWelcome">
+   <property name="text">
+    <string>welcome_window</string>
+   </property>
+  </action>
+  <action name="backToMachine">
+   <property name="text">
+    <string>machine_marking</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>help</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="backToAnalysis">
+   <property name="text">
+    <string>analysis</string>
+   </property>
+  </action>
+  <action name="backToPre">
+   <property name="text">
+    <string>pre_making</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
